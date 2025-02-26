@@ -1,8 +1,8 @@
 require "test_helper"
-require "generators/rails_icons/sync_generator"
+require "generators/action_icon/sync_generator"
 
 class SyncGeneratorTest < Rails::Generators::TestCase
-  tests RailsIcons::SyncGenerator
+  tests ActionIcon::SyncGenerator
 
   destination Rails.root.join("../../tmp/generators")
 

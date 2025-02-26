@@ -1,0 +1,2 @@
+ActionIcon.configure do |config|
+end

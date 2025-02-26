@@ -8,12 +8,12 @@ if [ -z "$VERSION" ]; then
   exit 1
 fi
 
-printf "module RailsIcons\n  VERSION = \"$VERSION\"\nend\n" > ./lib/rails_icons/version.rb
+printf "module ActionIcon\n  VERSION = \"$VERSION\"\nend\n" > ./lib/action_icon/version.rb
 bundle
-git add Gemfile.lock lib/rails_icons/version.rb
+git add Gemfile.lock lib/action_icon/version.rb
 git commit -m "Bump version for $VERSION"
 git push
 git tag v$VERSION
 git push --tags
-gem build rails_icons.gemspec
-gem push "rails_icons-$VERSION.gem"
+gem build action_icon.gemspec
+gem push "action_icon-$VERSION.gem"

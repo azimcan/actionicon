@@ -1,5 +1,5 @@
 require "test_helper"
-require "rails_icons/icon"
+require "action_icon/icon"
 
 include IconHelper
 
@@ -92,8 +92,8 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
-  test "it raises RailsIcons::NotFound error" do
-    assert_raises(RailsIcons::NotFound) do
+  test "it raises ActionIcon::NotFound error" do
+    assert_raises(ActionIcon::NotFound) do
       icon("non-existing-icon")
     end
   end

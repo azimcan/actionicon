@@ -2,10 +2,10 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in rails_icons.gemspec
+# Specify your gem's dependencies in action_icon.gemspec
 gemspec
 
-gem "rails", "~> 7.0.6"
+gem "rails"
 gem "propshaft"
 
 group :development do
